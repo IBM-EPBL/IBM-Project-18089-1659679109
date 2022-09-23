@@ -1,3 +1,5 @@
+![Real-Time Communication Powered By AI For Specially Abled](https://user-images.githubusercontent.com/77047894/191942086-35920187-32c6-424f-baf3-dbe157f64626.png)
+
 # IBM-Project-18089-1659679109
 <h3><b>Real-Time Communication System Powered by AI for Specially Abled</b></h3>
 <br>
