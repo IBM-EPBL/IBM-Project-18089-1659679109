@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+<li><a href="/services" class="active">Home</a></li>
+<li><a href="/homepage">Sign Out</a></li>
+{% endblock %}
+
+{% block body %}
+<section class="tm-welcome-section">
+    <div class="container tm-position-relative">
+     
+      <div class="row tm-welcome-content">
+        <br><br>
+        <h2 class="white-text tm-handwriting-font tm-welcome-header">
+          <img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line">&nbsp;Sign On!&nbsp;&nbsp;<img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line"></h2>
+        <h2 class="gold-text tm-welcome-header-2">Sign To Speech Translation</h2>
+        <p class="gray-text tm-welcome-description"><span
+                class="gold-text" style="font-size:22px; ">Real Time Communication Powered By AI For Specially Abled</span>
+                    <span style="font-size:20px; color:#222222">  The project intends to create an application which helps the specially challenged people to communicate among them and the common people. Communication between a person with hearing/speech impairment and a normal person has always been a challenging task. This application tries to reduce the barrier of communication by developing an assistive application for specially challenged people.</p>
+        </span>
+        <br><br><br>
+      </div>
+      <img src="{{ url_for('static', filename='/Others/SignSpeech.jpg') }}" alt="Table Set" class="tm-table-set img-responsive" width="100%">
+    </div>
+  </section>
+  <div class="tm-main-section light-gray-bg">
+    <div class="container" id="main">
+      <section class="tm-section tm-section-margin-bottom-0 row">
+        <div class="col-lg-12 tm-section-header-container">
+          <h2 class="tm-section-header gold-text tm-handwriting-font">Our Services</h2>
+          <div class="tm-hr-container">
+            <hr class="tm-hr">
+          </div>
+        </div>
+        <div class="col-lg-12 tm-popular-items-container">
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='Others/camera.jpeg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">C</span>lick To Capture</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Click here to turn on your camera and start showing gestures! </p>
+              <div class="order-now-container">
+                <a href="/predict" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='/Others/home.png') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">B</span>ack To Home</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Click here to go back and toggle between modes!</p>
+              <div class="order-now-container">
+                <a href="/services" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+    </div>
+  </div>
+{% endblock %}

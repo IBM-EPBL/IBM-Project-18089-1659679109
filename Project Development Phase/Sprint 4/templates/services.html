@@ -1,0 +1,134 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+<li><a href="/services" class="active">Home</a></li>
+<li><a href="/signtospeech">Sign To Speech</a></li>
+<li><a href="/speechtosign">Speech To Sign</a></li>
+<li><a href="/homepage">Sign Out</a></li>
+{% endblock %}
+
+{% block body %}
+<section class="tm-welcome-section">
+    <div class="container tm-position-relative">
+      <div class="row tm-welcome-content">
+        <br><br>
+        <h2 class="white-text tm-handwriting-font tm-welcome-header">
+          <img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img src="{{ url_for('static', filename='img/header-line.png') }}" alt="Line"
+            class="tm-header-line"></h2>
+        <h2 class="gold-text tm-welcome-header-2">Sign On!</h2>
+        <p class="gray-text tm-welcome-description"> <span
+                class="gold-text" style="font-size:25px;">Real Time Communication Powered By AI For Specially Abled - </span>
+                    <span style="font-size:20px;">  The project intends to create an application which helps the specially challenged people to communicate among them and the common people. Communication between a person with hearing/speech impairment and a normal person has always been a challenging task. This application tries to reduce the barrier of communication by developing an assistive application for specially challenged people.</p>
+        </span>
+        <br><br><br>
+           
+      <img src="{{ url_for('static', filename='/Others/logo4.jpg') }}" alt="Table Set" class="center" >
+    
+    
+  </section>
+  <div class="tm-main-section light-gray-bg">
+    <div class="container" id="main">
+      <section class="tm-section tm-section-margin-bottom-0 row">
+        <div class="col-lg-12 tm-section-header-container">
+          <h2 class="tm-section-header gold-text tm-handwriting-font">Our Services</h2>
+          <div class="tm-hr-container">
+            <hr class="tm-hr">
+          </div>
+        </div>
+        <div class="col-lg-12 tm-popular-items-container">
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='/Others/SigntoSpeech.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">S</span>ign to Speech</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Translate sign gestures into speech for normal people to understand!</p>
+              <div class="order-now-container">
+                <a href="/signtospeech" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='/Others/SpeechToSign.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">S</span>peech to Sign</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Start speaking to get relevent ASL gestures for specially abled!</p>
+              <div class="order-now-container">
+                <a href="/speechtosign" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  </div>
+
+<footer>
+    <div class="tm-black-bg">
+      <div class="container">
+        <div class="row margin-bottom-60">
+          <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
+            <h3 class="tm-footer-div-title">Our Team</h3>
+            <ul>
+              <li>Prathiba </li>
+              <li>Ramya</li>
+              <li>Rohith Kumar</li>
+              <li>Abhimanyu SG</li>
+            </ul>
+          </nav>
+          <div class="col-lg-5 col-md-5 tm-footer-div">
+            <h3 class="tm-footer-div-title">About Our Project!</h3>
+            <p class="margin-top-15" align="justify">Communication is essential for a person to express thoughts and emotions.</p>
+
+             <p class="margin-top-15" align="justify">  In the modern world, despite the technical advancements, it is still a struggle for Specially-Abled people to communicate and express their thoughts with the rest of the world. </p>
+
+              <p class="margin-top-15" align="justify">Sign language is developed for specially impaired people so that they can communicate with ease. It is the most structured language where every gesture has a specific meaning associated to it.</p>
+
+              <p class="margin-top-15" align="justify">But the normal people are not trained on hand sign language and conveying the message becomes difficult at times of emergency and causes a huge gap between the normal people and the inarticulate community. </p>
+
+              <p class="margin-top-15" align="justify">Hence it is crucial to develop a solution that acts as a bridge between the hearing impaired and the hearing community.</p>
+
+          </div>
+          <div class="col-lg-4 col-md-4 tm-footer-div">
+            <h3 class="tm-footer-div-title">Connect With Us</h3>
+            
+            Prathiba &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
+              <a href="https://www.linkedin.com/in/simran-volunesia/" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/simranenggprojects" class="tm-social-icon"><i class="fa fa-github"></i></a>
+              
+            <br><br>
+            Ramya &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/mehak-puri-9b058414b/" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+              <a href="https://medium.com/@simran17102004" class="tm-social-icon"><i class="fa fa-medium"></i></a>
+              <br><br>
+            Rohith &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/mehak-puri-9b058414b/" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/c/ConceptsInDepthAndEasy" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+              <a href="https://medium.com/@simran17102004" class="tm-social-icon"><i class="fa fa-medium"></i></a>
+              <br><br>
+            Abhimanyu &nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/mehak-puri-9b058414b/" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/c/ConceptsInDepthAndEasy" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
+              <a href="https://medium.com/@simran17102004" class="tm-social-icon"><i class="fa fa-medium"></i></a>
+              <br><br>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="container">
+        <div class="row tm-copyright">
+          <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2022 Prathiba $ Ramya $ Rohith $ Abhimanyu</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+{% endblock %}
