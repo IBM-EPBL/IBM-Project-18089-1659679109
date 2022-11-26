@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+<li><a href="/services" class="active">Home</a></li>
+<li><a href="/homepage">Sign Out</a></li>
+{% endblock %}
+
+{% block body %}
+
+<section class="tm-welcome-section">
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    <div class="container tm-position-relative">
+     
+      <div class="row tm-welcome-content">
+        <br><br>
+        <h2 class="white-text tm-handwriting-font tm-welcome-header">
+            <img src="{{ url_for('static', filename='/img/header-line.png') }}" alt="Line"
+              class="tm-header-line">&nbsp;Sign On!&nbsp;&nbsp;<img src="{{ url_for('static', filename='/img/header-line.png') }}" alt="Line"
+              class="tm-header-line"></h2>
+          <h2 class="gold-text tm-welcome-header-2">Speech To Sign Translation</h2>
+          <p class="gray-text tm-welcome-description"><span
+                  class="gold-text" style="font-size:22px; ">Real Time Communication Powered By AI For Specially Abled</span>
+                      <span style="font-size:20px; color:#222222">  The project intends to create an application which helps the specially challenged people to communicate among them and the common people. Communication between a person with hearing/speech impairment and a normal person has always been a challenging task. This application tries to reduce the barrier of communication by developing an assistive application for specially challenged people.</p>
+          </span>
+          <br><br><br>
+        </div>
+        <img src="{{ url_for('static', filename='/Others/SpeechSign.jpg') }}" alt="Table Set" class="tm-table-set img-responsive" width="100%">
+      </div>
+  
+  </section>
+
+
+  <div class="tm-main-section light-gray-bg">
+    <div class="container" id="main">
+      <section class="tm-section tm-section-margin-bottom-0 row">
+        <div class="col-lg-12 tm-section-header-container">
+          <h2 class="tm-section-header gold-text tm-handwriting-font">Our Services</h2>
+          <div class="tm-hr-container">
+            <hr class="tm-hr">
+          </div>
+        </div>
+
+          <div class="col-lg-12 tm-popular-items-container">
+          <div class="tm-popular-item">
+            <center>
+            <textarea style="margin-top:50px" id="convert_text" rows="14" cols="28"></textarea>
+         </center>
+            <div class="tm-popular-item-description">
+              <div>
+                <button id="click_to_record"  onclick="addImg()" class="btn" style="color: #c79c60; font-weight: bold;background-color: black; width: 230px; height:50px; 
+                border-radius:12px; font-size: 21px;">Capture</button><br/></br>
+                
+                <script>
+            
+                    function addImg(){
+                      var dimg = document.getElementById('convert_text').value;
+                      var letter=dimg.toUpperCase();
+                      p="../static/Gesture_Images/"+letter+".jpg";
+                      document.getElementById('demo').src=p;
+                      
+                    }           
+                   </script>
+                 </div>         
+                   </div>
+                   </div>
+                
+    
+        <script type="text/javascript" src="{{ url_for('static', filename='/js/script.js') }}"></script>
+          
+            <img id ="demo" src="{{ url_for('static', filename='/Others/asl.jpeg') }}" height="500px" width="300px" style="width:50%;"/><br><br>   
+            
+        </div>
+      </section>
+    </div>
+  </div>
+{% endblock %}
